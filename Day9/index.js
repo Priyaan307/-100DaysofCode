@@ -44,3 +44,27 @@ function map(array, func) {
   }
   
   console.log(map([1, 2, 3], double)); 
+
+  /*
+  Question 4. Write a function called `reject` which accepts two parameters an array and a callback.
+  The function should return a new array with all of the values that do not return true to the callback.
+  Examples: 
+  reject([1,2,3,4], function(val){
+    return val > 2;
+}); // [1,2]
+
+reject([2,3,4,5], function(val){
+    return val % 2 === 0;
+}); // [3,5]
+  */
+function reject(array, func) {
+    const result = [];
+    for (let i = 0; i < array.length; i++) {
+      if (!func(array[i])) {
+        result.push(array[i]);
+      }
+    }
+    return result;
+  }
+  console.log(reject([1, 2, 3, 4], val => val > 2)); // Outputs [1, 2]
+  console.log(reject([2, 3, 4, 5], val => val % 2 === 0)); // Outputs [3, 5]
