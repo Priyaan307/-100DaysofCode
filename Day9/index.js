@@ -12,5 +12,17 @@ console.log(message);
 sendMessage('Hare Krishna !', printMessage)
 
 /*
-Question 2. 
+Question 2. Write a function called `each` which accepts two parameters: an array and a callback function. 
+The `each` function should loop over the array passed to it and run the callback function on each element in it.
 */
+function each(array, func) {
+    for (let i = 0; i < array.length; i++) {
+      func(array[i]);
+    }
+  }
+  each([1,2,3,4], function(val){
+    console.log(val);
+});
+each([1,2,3,4], function(val){
+    console.log(val*2);
+});
