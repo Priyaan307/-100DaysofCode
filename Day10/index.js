@@ -48,3 +48,21 @@
         return value + 1;
     }
 }()); // 6 
+
+// 5. Write a function that reverses an array..
+
+function reverseArray(arr) {
+    let reversedArray = [];
+  
+    for (let i = arr.length - 1; i >= 0; i--) {
+      reversedArray.push(arr[i]);
+    }
+  
+    return reversedArray;
+  }
+  let myArray = [5,8,2,9,5,6,3,1];
+let reversedArray = reverseArray(myArray);
+console.log(reversedArray);
+console.log(myArray);
+
+// 6. 
