@@ -196,15 +196,36 @@ onload	     The browser has finished loading the page
 // let part = text.slice(-12, -6);
 // console.log(part); //Banana
 
-
-
-
-
 //  3.  String substring()
+
+// substring() is similar to slice().
+// The difference is that start and end values less than 0 are treated as 0 in substring().
+
+// let str = "Apple, Banana, Kiwi";
+// let part = str.substring(7, 13);
+// console.log(part); // Banana
+
+
 //  4.  String substr()
+
+// substr() is similar to slice().
+// The difference is that the second parameter specifies the length of the extracted part.
+
+//If you omit the second parameter, substr() will slice out the rest of the string.
+// let str = "Apple, Banana, Kiwi";
+// let part = str.substr(7); 
+// console.log(part); // Banana, Kiwi
+
+// If the first parameter is negative, the position counts from the end of the string.
+// let str = "Apple, Banana, Kiwi";
+// let part = str.substr(-4);
+// console.log(part); // Kiwi
 
 
 //  5.  String replace()**********************************************************
+
+// The replace() method replaces a specified value with another value in a string:
+
 //  6.  String replaceAll()
 //  7.  String toUpperCase()
 //  8.  String toLowerCase()
