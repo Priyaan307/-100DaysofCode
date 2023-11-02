@@ -177,3 +177,100 @@
 
 // 18. Match All Letters and Numbers:
 
+//**** I'll be continuing it tomorrow for now let's jump into challenges => 
+
+
+// Challenges : //
+
+// ## Question1:
+
+// What does the `search` function do?
+
+// The search() method searches a string for a specified value and returns the position of the match:
+// - If no matches are found, it returns -1.
+
+// Example: 
+
+// const str = 'This is Priya, a sweet little girl.';
+// const str1 = "";
+// const pattern = /sweet/;
+
+// const position = str.search(pattern);
+// console.log(position); // Output: 17
+
+// const position1 = str1.search(pattern);
+// console.log(position1); // Output: -1
+
+// Question2:
+
+// What do the `exec` and `test` functions do (these functions exist on the `RegExp` prototype)?
+
+// In JavaScript, both `exec` and `test` are methods available on the `RegExp` prototype, 
+// allowing us to work with regular expressions. Here's what they do:
+
+// ### `exec` Method:
+// The `exec` method is used to execute a search for a match in a string. It searches the string for a specified pattern
+//(regular expression), and if it finds a match, it returns an array containing the matched results. If no match is found, 
+// it returns `null`.
+
+//When a match is found, the `exec` method returns an array with the matched text and capturing groups,
+//along with additional properties indicating the index of the match within the input string.
+
+// Example:
+
+
+// const regex = /quick\s(brown).+?(jumps)/i;
+// const str = 'The quick brown fox jumps over the lazy dog';
+
+// const result = regex.exec(str);
+// console.log(result);
+
+
+// The output will be an array with the entire match at index 0 and the captured groups at subsequent indices (if any). 
+// The `exec` method also includes properties like `index` (the position of the match) and `input` (the original string).
+
+
+
+// ### `test` Method:
+
+// The `test` method, unlike `exec`, doesn’t return the actual matched string or its parts. Instead, 
+// it checks for a match between a regular expression and a string. It returns `true` if a match is found
+//  and `false` if no match is found.
+
+// Example:
+
+// const regex = /fox/;
+// const str = 'The quick brown fox jumps over the lazy dog';
+
+// const isMatch = regex.test(str);
+// console.log(isMatch); // Output: true
+
+
+// In this case, the `test` method returns `true` because the string contains the word 'fox',
+//  which matches the regular expression `/fox/`.
+
+// ### Differences:
+// - `exec` returns an array with details of the match and its captured groups or `null` if no match is found.
+// - `test` returns a boolean value (`true` or `false`) indicating whether the pattern is found in the string.
+
+// // Both methods are handy for working with regular expressions in JavaScript, but they serve slightly different purposes: 
+// `exec` is useful when you need details about the match, while `test` is often used when
+//  you only need to check for the presence of a match.
+
+// Question3: 
+
+// Write a function called `isValidPassword`, which accepts a string. If the string is longer than 7 characters 
+// and includes at least one special character (!,@,#, or $) , the function should return `true`.Otherwise, return `false`
+
+// function isValidPassword (string) {
+//     if (string.length > 7 && /[!@#$]/.test(string) ){
+//     return true;
+// }else{
+//         return false;
+//     }
+// };
+// Test cases
+// console.log(isValidPassword('TacoCat'));    // Output: false
+// console.log(isValidPassword('foo'));        // Output: false
+// console.log(isValidPassword('awesome!'));   // Output: true
+// console.log(isValidPassword('win!@'));      // Output: false
