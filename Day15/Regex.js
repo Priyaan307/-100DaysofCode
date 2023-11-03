@@ -274,3 +274,24 @@
 // console.log(isValidPassword('foo'));        // Output: false
 // console.log(isValidPassword('awesome!'));   // Output: true
 // console.log(isValidPassword('win!@'));      // Output: false
+
+// Question4.
+
+// write a JavaScript function `validatePassword(str)`. The function takes in one argument:`str` (string): a string of any length
+
+//The function should return `true` if the input string is exactly 8 characters long and contains at least one lowercase letter.
+
+// function validatePassword(str){
+//     if (str.length === 8 && /[a-z]/.test(str)) {
+// return true;
+//     }else{
+//         return false;
+//     }
+// };
+// // Test cases
+// console.log(validatePassword('Passw@rd'));    // Output: true
+// console.log(validatePassword('Secr3t'));      // Output: false
+// console.log(validatePassword('AbcdefgH'));    // Output: true
+// console.log(validatePassword('ABCDEFGH'));    // Output: false
+
+// Question5.
