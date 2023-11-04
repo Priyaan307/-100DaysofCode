@@ -74,22 +74,67 @@ i - ignore case of input
 
 // 23. \s => Match Whitespace: we can search for whitespace using \s, which is a lowercase s.
 
-// 24. \S => match non-whitespace
+// 24. \S(uppercase s) => we can search for Search for non-whitespace using \S.
+
+
+// let sample = "Whitespace is important in separating words";
+// let countNonWhiteSpace = /\S/g; 
+// let result = sample.match(countNonWhiteSpace);
 
 // 25. {} =>  Specify Upper and Lower Number of Matches:
 
-// 26. 
+// We use the plus sign + to look for one or more characters and the asterisk * to look for zero or more characters. These are convenient but sometimes we want to match a certain range of patterns.
+// we can specify the lower and upper number of patterns with quantity specifiers. Quantity specifiers are used with curly brackets ({ and }). we put two numbers between the curly brackets - for the lower and upper number of patterns.
+// Ex:
 
-// 27.
+// let str1 = "ooohh";
+// let str2 = "ohh";
+// let str3 = "ohhhh";
+// let regexp = /o{3,5}h{2,5}/;
+// let result = regexp.test(str1);
+// console.log(result);
 
-//28.
 
-//29.
+// 26.Specify Only the Lower Number of Matches:
+// we can specify the lower and upper number of patterns with quantity specifiers using curly brackets. sometimes we only want to specify the lower number of patterns with no upper limit.
+//  To only specify the lower number of patterns with no upper limit.
 
-//30.
+//ex:
+// let haStr = "Hazzzzah";
+// let haRegex = /Haz{4,}ah/;
+// let result = haRegex.test(haStr);
 
-//31.
+// 27.Specify Exact Number of Matches: 
+//  we can also specify  the lower and upper number of patterns with quantity specifiers using curly brackets.
+// To specify a certain number of patterns, just have that one number between the curly brackets.
 
-//32.
+// Example: 
+// let timStr = "Timmmmber";
+// let timRegex = /Tim{4}ber/;
+// let result = timRegex.test(timStr);
 
-//33.
+//28. Check for All or None:
+
+// let favWord = "favorite";
+// let favRegex = /favou?rite/;
+// let result = favRegex.test(favWord);
+
+
+// //29.Positive and Negative Lookahead
+
+// lookahead are patterns that tell javascript to look-ahead in our string to check for patterns further along. This can be useful when we want to search for multiple patterns over the same string.
+//  There are two kinds of lookhead: positive and negative.
+// positive lookahead is used as (?=...) where the ... is the required part that is not matched.
+// a negative lookahead will look to make sure the element in the search pattern is not there.A negative lookhead is used as (?!...) where the ... is the pattern that we do not want to be there.The rest of the pattern is returned if the negative lookahead part is not present.
+// ex.  passwords that are greater than 5 characters long, and have two consecutive digits.
+// let sampleWord = "astronaut";
+// let pwRegex = /(?=\w{6})(?=\w*\d{2})/;
+// let result = pwRegex.test(sampleWord);
+
+// //30.Check For Mixed Grouping of Characters
+
+// //31.Reuse Patterns Using Capture Groups
+
+// //32.Use Capture Groups to Search and Replace
+
+//33. Remove Whitespace from Start and End
