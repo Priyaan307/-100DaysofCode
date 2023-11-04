@@ -148,3 +148,48 @@ var test = obj.prop.getFullname;
 
 console.log(test()); // output: undefined
 
+/***************************       Debugging in JS        **************************/
+
+// Debugging is finding an error or resolving bugs.
+// Types of errors: (Three):  
+// (i)Syntax error: made by coder;  
+// (ii)Runtime errors: arise after execution of code
+// (iii) Logical error: Errors in approach we are using to solve a problem.
+
+// How can we debug error? or Ways to debug a js code?
+
+// ####1. Write a small code to see what it would be like using throw, try, and catch. In this problem, all you are doing is
+
+// generating a random number between 0 and 1.
+// If that number is >= 0.5, create an error and so you move to the catch.
+// However, your code continues to run even if an error happens.
+
+function generateRandomError() {
+    const randomNumber = Math.random();
+  
+    try {
+      if (randomNumber >= 0.5) {
+        throw new Error('Random number is greater than or equal to 0.5');
+      }
+  
+      // If no error is thrown, continue executing
+      console.log('Random number is less than 0.5:', randomNumber);
+      
+      // Other code can continue running even after the error is caught
+      console.log('Continuing code execution after error check...');
+    } catch (error) {
+      console.log('Error occurred:', error.message);
+      // The code continues running after catching the error
+      console.log('Continuing code execution after catching the error...');
+    }
+  }
+  
+  // Run the function
+  generateRandomError();
+  
+
+// ###2.
+// How do you create a snippet in the Chrome dev tools?
+// In the Chrome dev tools, on the right hand side of the sources tab, there is a "pause" button 
+// which allows you to "pause on caught exceptions." What is an exception?
+
