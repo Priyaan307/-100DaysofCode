@@ -25,31 +25,30 @@
 
 // splice() not only modifies the array it's being called on, but it also returns a new array containing the value of the removed elements:
 
-// 7.
+// 7.Copy Array Items Using slice()
 
-// 8.
+// 8.Copy an Array with the Spread Operator
 
-// 9.
+// 9.Combine Arrays with the Spread Operator
 
-// 10.
+// 10.Check For The Presence of an Element With indexOf()
 
-// 11.
+// 11.Iterate Through All an Array's Items Using For Loops
 
-// 12.
+// 12.Create complex multi-dimensional arrays
 
-// 13.
+// 13.Add Key-Value Pairs to JavaScript Objects
 
-// 14.
+// 14.Modify an Object Nested Within an Object
 
-// 15.
+// 15.Access Property Names with Bracket Notation
 
-// 16.
+// 16.Use the delete Keyword to Remove Object Properties
 
-// 17.
+// 17.Check if an Object has a Property
 
-//18.
+//18.Iterate Through the Keys of an Object with a for...in Statement
 
-//19.
+//19.Generate an Array of All Object Keys with Object.keys()
 
-//20.
-
+//20.Modify an Array Stored in an Object
