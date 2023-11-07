@@ -1,3 +1,15 @@
+// ### Q.No:0 
+
+function myName(name) {
+    if(name=="priya"){
+        return "hello priya";
+    }else{
+        return "Hii";
+    }
+    }
+    let p= myName("priya");
+    console.log(`${p}`);
+    
 // #### Q.No 1
 
 // Declare a constant named `PI` and assign it the value of the mathematical constant pi.
