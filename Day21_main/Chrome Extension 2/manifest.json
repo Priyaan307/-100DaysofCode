@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "Greeting",
+    "version": "1.0",
+    "action": {
+        "default_title": "Greeting Extension",
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ],
+    "permissions": ["tabs"]
+}
