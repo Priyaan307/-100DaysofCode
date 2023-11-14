@@ -20,5 +20,8 @@
             ]
         }
     ],
-    "permissions": ["tabs"]
+    "permissions": [
+        "tabs",
+        "geolocation"
+    ]
 }
