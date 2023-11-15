@@ -45,39 +45,39 @@ Prototype method - fullname = firstname + lastname
 */
 
 // Student constructor function
-function Student(firstname, lastname) {
-    this.firstname = firstname;
-    this.lastname = lastname;
-    this.present = false; // default value is false
-    this.location = 'home'; // default value is 'home'
-  }
+// function Student(firstname, lastname) {
+//     this.firstname = firstname;
+//     this.lastname = lastname;
+//     this.present = false; // default value is false
+//     this.location = 'home'; // default value is 'home'
+//   }
   
-  // Prototype method for calculating full name
-  Student.prototype.fullname = function() {
-    return this.firstname + ' ' + this.lastname;
-  };
+//   // Prototype method for calculating full name
+//   Student.prototype.fullname = function() {
+//     return this.firstname + ' ' + this.lastname;
+//   };
   
-  // Prototype method for going home
-  Student.prototype.goHome = function() {
-    this.location = 'home';
-  };
+//   // Prototype method for going home
+//   Student.prototype.goHome = function() {
+//     this.location = 'home';
+//   };
   
-  // Prototype method for going to school
-  Student.prototype.goSchool = function() {
-    this.location = 'school';
-    this.present = true;
-  };
+//   // Prototype method for going to school
+//   Student.prototype.goSchool = function() {
+//     this.location = 'school';
+//     this.present = true;
+//   };
   
-  // Example usage
-  const student1 = new Student('John', 'Doe');
-  console.log(student1.fullname()); // Output: John Doe
-  console.log(student1.location);    // Output: home
+//   // Example usage
+//   const student1 = new Student('Priya', 'Darshani');
+//   console.log(student1.fullname()); // Output: Priya Darshani
+//   console.log(student1.location);    // Output: home
   
-  student1.goSchool();
-  console.log(student1.location);    // Output: school
-  console.log(student1.present);     // Output: true
+//   student1.goSchool();
+//   console.log(student1.location);    // Output: school
+//   console.log(student1.present);     // Output: true
   
-  student1.goHome();
-  console.log(student1.location);    // Output: home
-  console.log(student1.present);     // Output: false
+//   student1.goHome();
+//   console.log(student1.location);    // Output: home
+//   console.log(student1.present);     // Output: false
   
