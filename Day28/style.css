@@ -1,9 +1,9 @@
-/* .container {
+.container {
     border: 1px solid black;
     height: 500px;
     width: 500px
 }
-.first-div {
+.div1 {
 background-color: green;
 border: 1px solid black;
 display: flex;
@@ -13,7 +13,7 @@ width: 350px;
 align-items: center;
 
 }
-.second-div {
+.div2 {
     background-color: green;
 border: 1px solid black;
 display: flex;
@@ -21,4 +21,7 @@ margin: 10px;
 height:200px;
 width: 350px;
 align-items: center;
-} */
+}
+p{
+    margin: 120px;
+}
