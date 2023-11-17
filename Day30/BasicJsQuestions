@@ -30,7 +30,7 @@ Declare a variable named favoriteBooks and assign it an array of objects. Each o
 Question 10.
 Create a class named Person with the properties name, age, and address. Write a constructor function that initializes the properties with the values passed in as arguments. Use the this keyword to set the properties. 
 
-### Naming Convention
+### DataTypes
 
 Question 11.
 Create a function called dataType that takes in one argument and returns a string indicating the data type of the input. The function should be able to handle strings, numbers, undefined, null, and boolean.
