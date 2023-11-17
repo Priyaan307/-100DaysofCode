@@ -1,0 +1,36 @@
+### Naming Convention:
+
+Question 1.
+Declare a variable named userAge and assign it the value of your age.
+
+Question 2.
+Declare a function named calculateDogYears that takes one parameter, dogYears, and returns the equivalent human years. One dog year is equal to seven human years.
+
+Question 3.
+Declare an object named person with the properties name and age. Set the value of name to your name and the value of age to your age.
+
+Question 4.
+Declare an array named fruits with the values "apple", "banana", and "orange".
+
+Question 5.
+Declare a class named Car with the properties make, model, and year. Write a constructor function that initializes the properties with the values passed in as arguments.
+
+Question 6.
+Declare a constant named PI and assign it the value of the mathematical constant pi.
+
+Question 7.
+Declare a function named sumArray that takes an array of numbers as a parameter and returns the sum of all the numbers in the array.
+
+Question 8.
+Declare an object named person with the properties firstName and lastName. Set the value of firstName to your first name and the value of lastName to your last name. Use the object shorthand notation.
+
+Question 9.
+Declare a variable named favoriteBooks and assign it an array of objects. Each object should have the properties title and author. Choose at least two books that you like and include them in the array.
+
+Question 10.
+Create a class named Person with the properties name, age, and address. Write a constructor function that initializes the properties with the values passed in as arguments. Use the this keyword to set the properties. 
+
+### Naming Convention
+
+Question 11.
+Create a function called dataType that takes in one argument and returns a string indicating the data type of the input. The function should be able to handle strings, numbers, undefined, null, and boolean.
