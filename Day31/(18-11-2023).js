@@ -131,11 +131,32 @@ console.log(newArr) // [ 1, 2, 3, 4, 5, 6 ]
 */
 
 /*
-11.Array splice()
+11.Array splice():
+=> The splice() method can be used to add new items to an array:
+Example:
+const girls = ['Priya', 'Riya', 'Sia'];
+girls.splice(1, 0, 'Diya');
+console.log(girls.splice(1, 0, 'Diya')); // Output : []
+console.log(girls); // Output: [ 'Priya', 'Diya', 'Diya', 'Riya', 'Sia' ]
+console.log(girls.splice(1,2, 'Asu')); // Output : [ 'Diya', 'Diya' ]
+console.log(girls); // Output: [ 'Priya', 'Asu', 'Riya', 'Sia' ]
 
+=> We can use splice() to remove elements without leaving "holes" in the array:
+Example: 
+const girls = ['Priya', 'Riya', 'Sia'];
+girls.splice(0,1);
+console.log(girls); // Output: [ 'Riya', 'Sia' ]
+=> The first parameter (0) defines the position where new elements should be added (spliced in).
+
+The second parameter (1) defines how many elements should be removed.
 */
 
 /*
-12.Array slice()
-
+12.Array slice():
+=> The slice() method slices out a piece of an array into a new array.
 */
+const girls = ['Priya', 'Riya', 'Sia'];
+console.log(girls.slice(1)); // Output: [ 'Riya', 'Sia' ]
+console.log(girls); // Output: [ 'Priya', 'Riya', 'Sia' ]
+console.log(girls.slice(2)); // Output: [ 'Sia' ]
+console.log(girls); // Output: [ 'Priya', 'Riya', 'Sia' ]
