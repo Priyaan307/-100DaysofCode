@@ -56,12 +56,63 @@
 // Question 2
 // Write n array with 20 elements. These could be numbers, words, sentences etc. Write a simple JavaScript program to join all elements of the following array into a string.
 
+// const array = [1, 2, 'a', 'b', 'Apple', 'Bee', 7, 8, 'This is Priya', 10, 'Cricket', 'WorldCup', 'Final', 'India', 'Australia', 16, 17, 18, 19, 20 ];
+// console.log(array.length); // 20
+// // console.log(array.toString()); // output: 1,2,a,b,Apple,Bee,7,8,This is Priya,10,Cricket,WorldCup,Final,India,Australia,16,17,18,19,20
+// console.log(array.join()); // output: 1,2,a,b,Apple,Bee,7,8,This is Priya,10,Cricket,WorldCup,Final,India,Australia,16,17,18,19,20
+
 
 // Question 3
 // Create and array of your choice of length and elements then write a JavaScript program to compute the sum and product of an array of integers.
 
+// let array =[1,2,3,4,5];
+// let sum = 0;
+// let product = 1;
+// for(i=0;i<array.length;i++) {
+//    sum = sum + array[i];
+//    product = product * array[i];
+// }
+// console.log(sum);
+// console.log(product);
+
+
 // Question 4
 // Create and array of your choice of length and elements then write a JavaScript program to remove duplicate items from an array
+
+// let myArray = [1, 2, 3, 4, 2, 5, 6, 1, 7, 8, 9, 4];
+
+// // Function to remove duplicates from the array without using methods
+// function removeDuplicates(arr) {
+//   let uniqueArray = [];
+
+//   for (let i = 0; i < arr.length; i++) {
+//     let currentElement = arr[i];
+//     let isDuplicate = false;
+
+//     // Check if the current element is already in uniqueArray
+//     for (let j = 0; j < uniqueArray.length; j++) {
+//       if (currentElement === uniqueArray[j]) {
+//         isDuplicate = true;
+//         break;
+//       }
+//     }
+
+//     // If the current element is not a duplicate, add it to uniqueArray
+//     if (!isDuplicate) {
+//       uniqueArray.push(currentElement);
+//     }
+//   }
+
+//   return uniqueArray;
+// }
+
+// // Calling the function and store the result in a new array
+// let resultArray = removeDuplicates(myArray);
+
+// // Displaying the original and unique arrays
+// console.log("Original Array:", myArray);
+// console.log("Array with Duplicates Removed:", resultArray);
+
 
 // ### Nested Data Structure Arrays
 
