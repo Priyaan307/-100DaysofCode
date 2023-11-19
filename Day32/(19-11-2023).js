@@ -35,9 +35,27 @@
 // const array = [1,2,3,4,5];
 // console.log((array.slice(0,1)).unshift()) ; // [ 1 ]
 // console.log(array); // [ 1, 2, 3, 4, 5 ]
+//...................................................
+// const array = [1,2,3,4,5];
+// console.log(array.slice(0,1)[0]); // 1
+
+// Method - 6
+// const array = [1,2,3,4,5];
+// console.log(array.reverse()); // [ 5, 4, 3, 2, 1 ]
+// console.log(array) // [ 5, 4, 3, 2, 1 ]
+// console.log(array.pop()); // 1
+
+// Method - 7
+// const array = [1,2,3,4,5];
+// console.log(array.shift()); // 1
+
+// Method - 8
+// const array = [1,2,3,4,5];
+// console.log(array.splice(0,1)[0]); // 1
 
 // Question 2
 // Write n array with 20 elements. These could be numbers, words, sentences etc. Write a simple JavaScript program to join all elements of the following array into a string.
+
 
 // Question 3
 // Create and array of your choice of length and elements then write a JavaScript program to compute the sum and product of an array of integers.
