@@ -55,7 +55,7 @@
 
 // Question 2
 // Write n array with 20 elements. These could be numbers, words, sentences etc. Write a simple JavaScript program to join all elements of the following array into a string.
-
+    
 // const array = [1, 2, 'a', 'b', 'Apple', 'Bee', 7, 8, 'This is Priya', 10, 'Cricket', 'WorldCup', 'Final', 'India', 'Australia', 16, 17, 18, 19, 20 ];
 // console.log(array.length); // 20
 // // console.log(array.toString()); // output: 1,2,a,b,Apple,Bee,7,8,This is Priya,10,Cricket,WorldCup,Final,India,Australia,16,17,18,19,20
