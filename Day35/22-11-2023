@@ -1,0 +1,12 @@
+- Databases: used to store data(persistance of data) -> Allow us to store data on external server.
+
+- website => Frontend + Backend + Databases
+
+- Difference between relational and non-relational databases(https://medium.com/@navindu/say-no-to-sql-ab1e49aa7299)
+
+- MongoDB: 
+
+MongoDB is a rich document-oriented NoSQL database.
+
+some of the basic stuff about MongoDB commands are querying, filtering data, deleting, updating and so on.
+
