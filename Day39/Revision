@@ -1,0 +1,15 @@
+# 1. I need to create a route that displays a page using CSS.
+
+// setup express js
+// install
+// express js boilerplate code 
+    // go to npm
+    // search express
+    // copy the code
+// express js ejs setup
+   // install ejs : npm i ejs
+   // set view engine
+   // create ejs files
+   // render ejs files inside route
+// setup express static files
+// architecture of public folder
